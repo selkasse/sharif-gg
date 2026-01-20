@@ -2,25 +2,19 @@ import "./style.css";
 import typescriptLogo from "./typescript.svg";
 import viteLogo from "/vite.svg";
 import subaruLogo from "/subaru_svg.svg";
-import { setupCounter } from "./counter.ts";
+import { setupCounter } from "./counter";
 
-document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <img src="${subaruLogo}" class="logo subaru" alt="Subaru logo" />
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`;
+const viteImg = document.querySelector<HTMLImageElement>("#vite-logo");
+const tsImg = document.querySelector<HTMLImageElement>("#ts-logo");
+const subaruImg = document.querySelector<HTMLImageElement>("#subaru-logo");
+const counter = document.querySelector<HTMLButtonElement>("#counter");
 
-setupCounter(document.querySelector<HTMLButtonElement>("#counter")!);
+if (!viteImg || !tsImg || !subaruImg || !counter) {
+  throw new Error("Required elements not found in index.html");
+}
+
+viteImg.src = viteLogo;
+tsImg.src = typescriptLogo;
+subaruImg.src = subaruLogo;
+
+setupCounter(counter);
