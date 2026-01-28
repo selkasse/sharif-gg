@@ -1,5 +1,5 @@
 import { html, css, LitElement } from "lit";
-import { customElement, property } from "lit/decorators.js";
+import { customElement } from "lit/decorators.js";
 
 @customElement("blog-header")
 export class BlogHeader extends LitElement {
@@ -16,7 +16,9 @@ export class BlogHeader extends LitElement {
 
   render() {
     return html`<div id="blog-header">
-      <a href="#">Home</a> | <a href="#">About</a> | <a href="#">Tools</a>
+      <test-lit></test-lit>
+      <a href="#">Blog</a> | <a href="#">About</a> | <a href="#">Tools</a> |
+      <a href="#">Projects</a> | <a href="#">Hobbies</a>
     </div>`;
   }
 }
