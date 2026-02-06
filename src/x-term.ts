@@ -6,21 +6,34 @@ import "@xterm/xterm/css/xterm.css";
 @customElement("x-term")
 export class XTerm extends LitElement {
   static styles = css`
-  # your css here
+    :host {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    #terminal {
+      width: 100%;
+      height: 100%;
+    }
   `;
 
   firstUpdated(): void {
     const term = new Terminal();
-    const terminalContainer = this.shadowRoot?.getElementById("terminal");
+    const terminalContainer = this.querySelector("#terminal");
     if (!terminalContainer) {
       throw new Error("terminal container not found");
     }
-    term.open(terminalContainer);
+    term.open(terminalContainer as HTMLElement);
     term.write("Welcome to X-Term!\r\n");
   }
 
   render() {
-    return html` yo from the termino!
-      <div id="terminal"></div>`;
+    return html` <div id="terminal"></div>`;
+  }
+
+  // Render into the light DOM so global styles (including xterm.css)
+  // apply to the terminal elements inserted by xterm.js.
+  protected override createRenderRoot(): HTMLElement | DocumentFragment {
+    return this as HTMLElement;
   }
 }
