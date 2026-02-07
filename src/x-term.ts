@@ -18,7 +18,7 @@ export class XTerm extends LitElement {
   `;
 
   firstUpdated(): void {
-    const term = new Terminal();
+    const term = new Terminal({ cursorBlink: true });
     const terminalContainer = this.querySelector("#terminal");
     if (!terminalContainer) {
       throw new Error("terminal container not found");
