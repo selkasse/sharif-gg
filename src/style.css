@@ -33,6 +33,13 @@ h1 {
   text-align: center;
 }
 
+x-term {
+  display: block;
+  width: 100%;
+  height: 500px;
+  text-align: left;
+}
+
 .card {
   padding: 2em;
 }
