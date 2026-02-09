@@ -10,15 +10,20 @@ export class BlogHeader extends LitElement {
 
     a {
       text-decoration: none;
-      color: whitesmoke;
+      color: var(--fg);
+    }
+
+    a:hover {
+      color: var(--accent);
+      text-decoration: underline;
     }
   `;
 
   render() {
     return html`<div id="blog-header">
       <test-lit></test-lit>
-      <a href="#">Blog</a> | <a href="#">About</a> | <a href="#">Tools</a> |
-      <a href="#">Projects</a> | <a href="#">Hobbies</a>
+      <a href="/about/">About</a> | <a href="/blog/">Blog</a> |
+      <a href="#">Tools</a> | <a href="#">Projects</a> | <a href="#">Hobbies</a>
     </div>`;
   }
 }

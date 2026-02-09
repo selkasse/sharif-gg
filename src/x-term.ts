@@ -18,7 +18,31 @@ export class XTerm extends LitElement {
   `;
 
   firstUpdated(): void {
-    const term = new Terminal({ cursorBlink: true });
+    // const term = new Terminal({ cursorBlink: true });
+    const term = new Terminal();
+    term.options = {
+      fontFamily:
+        'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+      fontSize: 14,
+      lineHeight: 1.25,
+      cursorBlink: true,
+      theme: {
+        background: "#0f1620",
+        foreground: "#c7d0d9",
+        cursor: "#c7d0d9",
+        selectionBackground: "rgba(122, 162, 247, 0.35)",
+        black: "#0b0f14",
+        red: "#f7768e",
+        green: "#9ece6a",
+        yellow: "#e0af68",
+        blue: "#7aa2f7",
+        magenta: "#bb9af7",
+        cyan: "#7dcfff",
+        white: "#c7d0d9",
+        brightBlack: "#3b4758",
+        brightWhite: "#ffffff",
+      },
+    };
     const terminalContainer = this.querySelector("#terminal");
     if (!terminalContainer) {
       throw new Error("terminal container not found");

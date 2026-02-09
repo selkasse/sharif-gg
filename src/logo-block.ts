@@ -1,5 +1,5 @@
 import { html, css, LitElement } from "lit";
-import { customElement, property } from "lit/decorators.js";
+import { customElement } from "lit/decorators.js";
 import viteLogo from "/vite.svg";
 import typescriptLogo from "./typescript.svg";
 import subaruLogo from "/subaru_svg.svg";

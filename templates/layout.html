@@ -4,19 +4,25 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sharif-gg</title>
+    <title>{{TITLE}}</title>
+    <meta name="description" content="{{DESCRIPTION}}" />
+
+    {{CSS}}
   </head>
   <body>
+    <!-- Lit enhancement / island -->
     <div id="app">
       <blog-header></blog-header>
       <test-lit name="World"></test-lit>
 
-      <div class="term-shell">
+      <div>
         <x-term></x-term>
       </div>
+
+      <!-- Pre-rendered (SSG) content lives here -->
+      <main id="content">{{CONTENT}}</main>
     </div>
 
-    <script type="module" src="/src/main.ts"></script>
-    <!-- <script type="module" src="./src/x-term.ts"></script> -->
+    {{JS}}
   </body>
 </html>

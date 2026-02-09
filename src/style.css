@@ -1,12 +1,25 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: "Courier New", Courier, monospace, Monaco, "Andale Mono",
+    "Ubuntu Mono";
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 800;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --bg: #0b0f14;
+  --panel: #0f1620;
+  --border: rgba(199, 208, 217, 0.12);
 
+  --fg: #c7d0d9;
+  --muted: #7c8796;
+
+  --accent: #7aa2f7;
+  --accent-2: #9ece6a;
+
+  --error: #f7768e;
+  --warn: #e0af68;
+
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,37 +28,90 @@
 
 body {
   margin: 0;
-  /* display: flex;
-  place-items: center; */
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--mono);
+  font-size: 15px;
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
 }
 
 #app {
-  max-width: 1280px;
+  /* max-width: 1280px; */
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
+  padding: 28px 20px 64px;
   text-align: center;
+}
+
+/* Make “sections” feel like terminal panels */
+.term-shell {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#content {
+  text-align: left;
+  margin-top: 18px;
+  padding: 18px 20px 26px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+#content :where(h1, h2, h3) {
+  font-family: var(--mono);
+  font-weight: 700;
+  margin: 18px 0 10px;
+}
+
+#content :where(p, ul, ol) {
+  margin: 10px 0;
+}
+
+#content :where(a) {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+#content :where(a:hover) {
+  text-decoration: underline;
+}
+
+#content :where(code) {
+  font-family: var(--mono);
+  font-size: 0.95em;
+  color: var(--accent-2);
+}
+
+#content :where(pre) {
+  margin: 12px 0;
+  padding: 12px 14px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: auto;
+}
+
+#content :where(pre code) {
+  color: var(--fg);
+}
+
+/* Subtle “terminal divider” style */
+.hr {
+  border: 0;
+  border-top: 1px dashed var(--border);
+  margin: 18px 0;
 }
 
 x-term {
   display: block;
   width: 100%;
-  height: 500px;
+  height: 100px;
   text-align: left;
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
 
 button {
