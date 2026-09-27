@@ -3,10 +3,10 @@ flowchart TD
   subgraph frontend["sharif.gg (Single-Page Structure)"]
     hero["Hero Section
     'Building stable systems on & off Salesforce'"]
-    
+
     hero --> proof["The Proof (What I've Built)"]
     hero --> ctas["The Asks (Engagement)"]
-    
+
     subgraph projects["Portfolio & Experience"]
       proof --> p1["Descriptador
       (Saleshorse SaaS)"]
@@ -15,7 +15,7 @@ flowchart TD
       proof --> p3["Enterprise Experience
       (Data Retention, CI/CD, Mulesoft)"]
     end
-    
+
     subgraph engagement["Calls to Action"]
       ctas --> primary["Primary: 'Let's Talk'
       (1099 Consulting)"]
@@ -30,6 +30,7 @@ flowchart TD
     secondary --> socials["Twitch / YouTube / GitHub"]
   end
 ```
+
 ---
 
 ### [Header Section]
@@ -63,11 +64,11 @@ _Section Intro: I like to treat Salesforce like actual software, not just a decl
 
 **The 9-to-5: Enterprise Experience**
 
-- **The Pitch:** I am currently the sole highly-technical developer at a stable credit union, acting as the bridge between standard CRM administration and modern software engineering.
+- **The Pitch:** I am currently the sole Salesforce developer at a credit union, acting as the bridge between standard CRM administration and modern software engineering.
 - **Recent Wins:**
-    - Architected a complex data retention framework utilizing TypeScript LWCs, the Metadata API, Queueables, and Batches.
-    - Built custom integrations to process and manipulate real-time Mulesoft JSON payloads.
-    - Currently championing the team's transition away from manual change sets and into source-driven development (Git, GitHub Actions CI/CD, and TS/Apex linting).
+  - Architected a complex data retention framework utilizing TypeScript LWCs, the Metadata API, Queueables, and Batches.
+  - Built custom integrations to process and manipulate real-time Mulesoft JSON payloads.
+  - Currently championing the team's transition away from manual change sets and into source-driven development (Git, GitHub Actions CI/CD, and TS/Apex linting).
 
 ---
 
