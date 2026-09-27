@@ -1,20 +1,18 @@
 import { ArrowRight } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 function CallToAction() {
   return (
     <section className="mx-auto max-w-5xl px-6 py-16 md:py-24">
       <p className="font-mono text-sm uppercase tracking-wide text-emerald-400">
-        // Connect
+        // NETWORK
       </p>
-      {/* <h2 className="mt-2 font-mono text-2xl font-semibold text-zinc-100 md:text-3xl">
-        Endpoints
-      </h2> */}
       <h2 className="mt-2 font-mono text-2xl font-semibold text-zinc-100 md:text-3xl">
         Get in touch
       </h2>
 
-      <div className="mt-10 grid gap-6">
-        <div className="rounded-lg border border-zinc-800 bg-zinc-900/40 p-6">
+      <div className="mt-10 grid gap-6 md:grid-cols-2">
+        <div className="flex flex-col rounded-lg border border-zinc-800 bg-zinc-900/40 p-6">
           <h3 className="font-mono text-lg text-zinc-100">
             Let’s Build Something{" "}
             <span className="text-sm font-normal text-zinc-500">
@@ -30,51 +28,42 @@ function CallToAction() {
           </p>
           <a
             href="#"
-            className="mt-6 inline-flex items-center gap-2 rounded-md bg-emerald-400 px-4 py-2 font-mono text-sm font-medium text-zinc-950 transition-colors hover:bg-emerald-300"
+            className="mt-6 inline-flex items-center gap-2 self-start rounded-md bg-emerald-400 px-4 py-2 font-mono text-sm font-medium text-zinc-950 transition-colors hover:bg-emerald-300"
           >
             Book a Technical Chat
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </a>
         </div>
 
-        {/* <div className="rounded-lg border border-zinc-800 bg-zinc-900/40 p-6">
+        <div className="flex flex-col rounded-lg border border-zinc-800 bg-zinc-900/40 p-6">
           <h3 className="font-mono text-lg text-zinc-100">
-            Learn in Public{" "}
-            <span className="text-sm font-normal text-zinc-500">
-              (Follow the Journey)
-            </span>
+            Socials &amp; Code
           </h3>
           <p className="mt-4 text-sm text-zinc-400">
-            No newsletters or "5-step guru guides" here. I'm currently exploring
-            the world of private, air-gapped AI homelabs (Docker, Ollama,
-            pgvector) and sharing what I learn along the way. Sometimes I know
-            exactly what I'm doing; sometimes I'm figuring it out live. Come
-            watch me break things and fix them.
+            View my full work history on LinkedIn, or check out my recent
+            activity on GitHub. More to come here soon!
           </p>
-          <div className="mt-6 flex items-center gap-4">
+          <div className="mt-auto flex items-center gap-4 pt-6">
             <a
-              href="#"
-              aria-label="Twitch"
+              href="https://www.linkedin.com/in/selkassed/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
               className="text-zinc-500 transition-colors hover:text-emerald-400"
             >
-              <SiTwitch className="h-5 w-5" />
+              <FaLinkedin className="h-5 w-5" aria-hidden="true" />
             </a>
             <a
-              href="#"
-              aria-label="YouTube"
-              className="text-zinc-500 transition-colors hover:text-emerald-400"
-            >
-              <SiYoutube className="h-5 w-5" />
-            </a>
-            <a
-              href="#"
+              href="https://github.com/selkasse"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="GitHub"
               className="text-zinc-500 transition-colors hover:text-emerald-400"
             >
-              <SiGithub className="h-5 w-5" />
+              <FaGithub className="h-5 w-5" aria-hidden="true" />
             </a>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );
