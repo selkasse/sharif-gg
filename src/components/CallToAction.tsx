@@ -1,5 +1,4 @@
 import { ArrowRight } from "lucide-react";
-import { SiGithub, SiTwitch, SiYoutube } from "react-icons/si";
 
 function CallToAction() {
   return (
@@ -7,11 +6,14 @@ function CallToAction() {
       <p className="font-mono text-sm uppercase tracking-wide text-emerald-400">
         // Connect
       </p>
-      <h2 className="mt-2 font-mono text-2xl font-semibold text-zinc-100 md:text-3xl">
+      {/* <h2 className="mt-2 font-mono text-2xl font-semibold text-zinc-100 md:text-3xl">
         Endpoints
+      </h2> */}
+      <h2 className="mt-2 font-mono text-2xl font-semibold text-zinc-100 md:text-3xl">
+        Get in touch
       </h2>
 
-      <div className="mt-10 grid gap-6 md:grid-cols-2">
+      <div className="mt-10 grid gap-6">
         <div className="rounded-lg border border-zinc-800 bg-zinc-900/40 p-6">
           <h3 className="font-mono text-lg text-zinc-100">
             Let’s Build Something{" "}
@@ -35,7 +37,7 @@ function CallToAction() {
           </a>
         </div>
 
-        <div className="rounded-lg border border-zinc-800 bg-zinc-900/40 p-6">
+        {/* <div className="rounded-lg border border-zinc-800 bg-zinc-900/40 p-6">
           <h3 className="font-mono text-lg text-zinc-100">
             Learn in Public{" "}
             <span className="text-sm font-normal text-zinc-500">
@@ -72,7 +74,7 @@ function CallToAction() {
               <SiGithub className="h-5 w-5" />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
