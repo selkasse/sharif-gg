@@ -4,7 +4,7 @@ function Projects() {
   return (
     <section className="mx-auto max-w-5xl px-6 py-16 md:py-24">
       <p className="font-mono text-sm uppercase tracking-wide text-emerald-400">
-        // The Proof
+        // Work
       </p>
       <h2 className="mt-2 font-mono text-2xl font-semibold text-zinc-100 md:text-3xl">
         Portfolio &amp; Projects
@@ -21,7 +21,7 @@ function Projects() {
           // meta="(A Saleshorse Product)"
           fields={[
             {
-              label: "The Pitch",
+              label: "Summary",
               text: "An app built to solve a simple but incredibly annoying problem: undocumented Salesforce orgs.",
             },
             {
@@ -33,13 +33,14 @@ function Projects() {
               text: "Full-stack web app, Salesforce REST/Metadata APIs, OAuth 2.0, LLM integration.",
             },
           ]}
+          link="https://descriptador.fyi"
         />
 
         <ProjectCard
           title="Dungeon Shell"
           fields={[
             {
-              label: "The Pitch",
+              label: "Summary",
               text: "A web-based game designed to help users learn CLI commands.",
             },
             {
@@ -55,6 +56,7 @@ function Projects() {
               text: "Xterm.js, Docker, WebSockets, microservices backend",
             },
           ]}
+          link="https://dungeonshell.com"
         />
       </div>
 
@@ -64,7 +66,7 @@ function Projects() {
           meta="(Enterprise Experience)"
           fields={[
             {
-              label: "The Pitch",
+              label: "Summary",
               text: "I am currently the sole Salesforce developer at a credit union, acting as the bridge between standard CRM administration and modern software engineering.",
             },
             {
