@@ -36,12 +36,10 @@ function CallToAction() {
         </div>
 
         <div className="flex flex-col rounded-lg border border-zinc-800 bg-zinc-900/40 p-6">
-          <h3 className="font-mono text-lg text-zinc-100">
-            Socials &amp; Code
-          </h3>
+          <h3 className="font-mono text-lg text-zinc-100">Socials</h3>
           <p className="mt-4 text-sm text-zinc-400">
             View my full work history on LinkedIn, or check out my recent
-            activity on GitHub. More to come here soon!
+            activity on GitHub. More to come soon!
           </p>
           <div className="mt-auto flex items-center gap-4 pt-6">
             <a

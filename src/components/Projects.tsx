@@ -12,7 +12,7 @@ function Projects() {
       <p className="mt-4 max-w-2xl text-zinc-400">
         I like to treat Salesforce like actual software, not just a declarative
         database. When I’m not writing Apex, I’m usually building full-stack
-        apps or messing with containerization.
+        apps.
       </p>
 
       <div className="mt-10 grid gap-6 md:grid-cols-2">
@@ -53,7 +53,7 @@ function Projects() {
             },
             {
               label: "The Tech",
-              text: "Xterm.js, Docker, WebSockets, microservices backend",
+              text: "Xterm.js, Docker, WebSockets, microservices backend.",
             },
           ]}
           link="https://dungeonshell.com"
