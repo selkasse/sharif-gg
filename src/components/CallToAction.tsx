@@ -27,7 +27,9 @@ function CallToAction() {
             CI/CD pipeline, let’s talk.
           </p>
           <a
-            href="#"
+            href="https://cal.com/sharif-elkassed/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-6 inline-flex items-center gap-2 self-start rounded-md bg-emerald-400 px-4 py-2 font-mono text-sm font-medium text-zinc-950 transition-colors hover:bg-emerald-300"
           >
             Book a Technical Chat
